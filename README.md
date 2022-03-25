@@ -12,7 +12,7 @@ pip install gdown
 ```
 You can find all of the information and details about PyRat and its usage in the above Github repository.
 
-After PyRat installation, to use the RL agent with Game theory to beat the Manhattan greedy algorithm, put TEAM2_AI.py and TEAM2_FCN_64_16.pt to /AIs folder in /Pyrat-1 directory. Then use the **following command** in PyRat-1 directory to launch the game:
+After PyRat installation, to use the RL agent with Game theory to beat the Manhattan greedy algorithm, put *TEAM2_AI.py* and *TEAM2_FCN_64_16.pt* to **/AIs** folder in **/Pyrat-1** directory. Then use the **following command** in PyRat-1 directory to launch the game:
 
 ```
 python pyrat.py -d 0 -md 0 -p 40 -x 21 -y 15 --rat AIs/RL_AI.py --python AIs/manh.py --synchronous --nonsymmetric --nodrawing --tests 1000
