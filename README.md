@@ -2,6 +2,10 @@
 
 This is code implementation for the project of PyRat game playing using Reinforcement learning (RL) and Combinatorial game theory as the additional "booster" for the robustness of the RL agent.
 
+- For RL, to speed up the learning process of the agent, a full potential of exploration is provided to it in the beginning of the training via *Epsilon greedy algorithm*. But the exploration capability of the agent exponentially reduces when the number of games it plays increases.
+
+- As the runtime of Combinatorial Game Theory is really long since it needs to compute the best moves by considering the opponent's strategy and position and scanning through the whole maze for the cheese positions, the agent only expoloits game theory onnce the number of the cheese present on the maze is less than 13.
+
 ## 1. Play the game
 
 To play PyRat game you should first go to [this Github repository](https://github.com/BastienPasdeloup/PyRat-1) to get PyRat, and then install some required packages:
